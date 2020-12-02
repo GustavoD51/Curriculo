@@ -1,10 +1,56 @@
-.perfil{
-	border-radius: 100%;
-	max-width: 200px;
-	border: 1px solid black;
+body{
+	background-color: #f1f1f1;
 }
 
-p{
-	text-center;
+.corpo{
+	margin: auto;
+	width: 960px;
 }
+
+.conteudo {
+	display: table;
+}
+
+.imagem{
+	display: : table-cell;
+	float: left;
+}
+
+.texto{
+	display: table-cell;
+	float: left;
+	width: 600px;
+	margin-left: 20px;
+}
+
+.ool{
+	text-align: center;
+}
+
+.imagem2{
+	border-radius: 10%
+}
+
+.lista{
+	display: table-cell;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.titulo{
+	margin-top: 20px;
+	font: #3B0B0B;
+}
+
+.secao{
+	margin-top: 250px;
+	margin-left: 500px
+}
+
+input{
+	width: 400px;
+	height: 50px;
+}
+
 
