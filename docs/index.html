@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-<html lang="pt-br">
 <head>
-	<title> Gustavo Demarchi - Curriculo </title>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title> Gosto Musical </title>
 
 	<meta charset="utf-8">
 	
@@ -19,134 +16,83 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-<style>
-	body{
-		background-color: #A9A9A9;
-	}
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </style>
 
 </head>
+
 <body>
 
-	<div class="container">
+	<section class="corpo">
+		<h1><p align="center" class="titulo" > Gostos Musicais </p></h1>.
 
-		<div class="row mb-5">
-			<div class="col-sm-12 text-center">
-				<section>
-					<p>
-						<font size="6" face="Serif">
-						<h1>Gustavo Demarchi</h1>
-						</font>
-					</p>
-					<img class="perfil" src="img/perfil.jpg">
-				</section>
+		<h1><p align="center" class="titulo"> Sertanejo </p></h1>.
+		<div class="conteudo">
+			<div class="imagem">
+				<img class="imagem2" src="img/sertanejo.jpg" width="340" height="190">
+			</div>
+
+			<div class="texto">
+				<h3>Música sertaneja é um gênero musical do Brasil produzido a partir do final da década de 1920 por compositores urbanos, rurais e outros chamada genericamente de modas e emboladas cujo som da viola é predominante.</h3>
+			</div>
+
+			<div >
+				<ul class="lista">
+					<li> <h2>Cantores Conhecidos: </h2> </li>
+					<li> <h4> Simone e Simaria </h4></li>
+					<li> <h4>Xitãozinho e Xororó </h4></li>
+					<li> <h4>Zé Neto e Cristiano </h4></li>
+				</ul>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-6 mb-5 text-center">
-
-				<div class="card" style="width: 45rem; border-radius: 25px; background-color: #4F4F4F">
-				  <div class="card-header">
-				    <p>
-						<font size="5" face="Serif">
-						Infomações Pessoais
-						</font>
-					</p>
-
-				  </div>
-				  <ul class="list-group list-group-flush">
-				    <li class="list-group-item"><h5>Gustavo Figueiredo Demarchi</h5></li>
-				    <li class="list-group-item"><h5>Masculino</h5></li>
-				    <li class="list-group-item"><h5>Solteiro</h5></li>
-				    <li class="list-group-item"><h5>19 anos</h5></li>
-				  </ul>
-				</div>
-
+			
+			<h1><p align="center" class="titulo"> Rap </p></h1>.
+			
+			<div class="imagem">
+				<img class="imagem2" src="img/rap.jpg" width="340" height="190">
 			</div>
+
+			<div class="texto">
+				<h3>Rap é um discurso rítmico com rimas e poesias, que surgiu no final do século XX entre as comunidades Afro-descendentes nos Estados Unidos. É um dos cinco pilares fundamentais da cultura hip hop, de modo que se chame metonimicamente hip hop.</h3>
+			</div>
+
+			<div >
+				<ul class="lista">
+					<li> <h2>Cantores Conhecidos: </h2> </li>
+					<li> <h4> DK47 </h4></li>
+					<li> <h4>MV Bill </h4></li>
+					<li> <h4>Sant </h4></li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="secao">
+
+		<input type="text" id="nome" placeholder="Nome">
+		<br />
+		<input type="text" id="estilo" placeholder="Estilo Musical">
+		<br />
+		<input type="submit" onclick="capturar()" value="Clique Aqui" >
+		<h1 id="valordigitado"></h1> <h1 id="valordigitado2"></h1>
 		
-			<div class="col-sm-6 text-center">
+	</section>
 
-				<div class="card" style="width: 45rem; border-radius: 25px; background-color: #4F4F4F ">
-					 <p>
-						<font size="5" face="Serif">
-						Infomações de Contato
-						</font>
-					</p>
-					  <ul class="list-group list-group-flush">
-					    <li class="list-group-item"><h5>Telefone: 984833818</h5></li>
-					    <li class="list-group-item"><h5>gudemarchifigueiredo@gmail.com</h5></li>
-					    <li class="list-group-item"><h5>Rua Lauro Alves do Nascimento - 110, Londrina(PR)</h5></li>
-					  </ul>
-				</div>
+	<script>
+		var nome = "";
+		var estilo = "";
 
-		
-			</div>
-		</div>
-
-		<div class="row">
-				<div class="col-6 text-center">
-
-					<div class="card" style="width: 45rem; border-radius: 25px; background-color: #4F4F4F">
-						<p>
-							<font size="5" face="Serif">
-							Educação
-							</font>
-						</p>
-						  <ul class="list-group list-group-flush">
-						    <li class="list-group-item"><h5>Ensino Fundamental: Escola Municipal Dom Bosco, Abatiá(PR)</h5></li>
-						    <li class="list-group-item"><h5>Ensino Médio: Escola Estadua Cyríaco Russo, Bandeirantes(PR))</h5></li>
-						    <li class="list-group-item"><h5>Cursando Ensino Superior: Unicesumar, Londrina(PR)</h5></li>
-						  </ul>
-					</div>
-				</div>
-
-				<div class="col-6 mb-5 text-center">
-
-					<div class="card" style="width: 45rem; border-radius: 25px; background-color: #4F4F4F">
-						<p>
-							<font size="5" face="Serif">
-							Experiências 
-							</font>
-						</p>
-						  <ul class="list-group list-group-flush">
-						    <li class="list-group-item"><h5>Tratador de agua de piscinas</h5></li>
-						    <li class="list-group-item"><h5>Agronomia Familiar</h5></li>
-						    <li class="list-group-item"><h5>Caixa de supermecado</h5></li>
-						  </ul>
-					</div>
-				</div>
-
-		</div>
-
-		<div class="row ">
-			<div class="col-6 mb-5 text-center">
-
-					<div class="card" style="width: 45rem; border-radius: 25px; background-color: #4F4F4F">
-						<p>
-							<font size="5" face="Serif">
-							Certificados
-							</font>
-						</p>
-							<ul class="list-group list-group-flush">
-							   <li class="list-group-item"><h5>JAA(Jovem Agricultor Aprendiz)</h5></li>
-							   <li class="list-group-item"><h5>Word 2010</h5></li>
-							</ul>
-						</div>
-			</div>
-
-		</div>
-	</div>
-
-
-	<div class="row">
-		<div class="col-12  text-center">
-		<p> <h2> Email para contato: </h2>
-	      <a href="https://mail.google.com/mail/u/0/#inbox"><span class="glyphicon glyphicon-envelope"></span></a>
-	    </p>
-	    </div>
-    </div>
-
-
+		function capturar(){
+			nome = document.getElementById('nome').value;
+				document.getElementById('valordigitado').innerHTML = nome;
+			estilo = document.getElementById('estilo').value
+				document.getElementById('valordigitado2').innerHTML = estilo;
+				
+		}
+	</script>
 </body>
+</html>
 </html>
